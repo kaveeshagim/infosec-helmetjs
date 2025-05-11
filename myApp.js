@@ -8,6 +8,7 @@ app.use(
     action: "deny",
   })
 );
+app.use(helmet.xssFilter());
 
 module.exports = app;
 const api = require("./server.js");
